@@ -43,8 +43,13 @@ function anadirTrabajador() {
     document.getElementById("contadorMarketing").textContent = contadorMarketing;
     document.getElementById("contadorVentas").textContent = contadorVentas;
     document.getElementById("contadorAdministracion").textContent = contadorAdministracion;
+
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("correo").value = "";
+    document.getElementById("departamento").selectedIndex = 0;
 }
 
-let boton = document.getElementById("btnGuardar");
+let boton = document.getElementById("botonGuardar");
 
 boton.addEventListener("click", anadirTrabajador);
